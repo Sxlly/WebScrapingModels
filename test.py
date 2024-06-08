@@ -1,8 +1,6 @@
 from bs4 import BeautifulSoup
+import requests
 
-with open('home.html', 'r') as scrape_file:
-    content = scrape_file.read()
-    print(content)
+scrape_text = requests.get('https://logs.tf')
 
-    soup = BeautifulSoup(content, 'lxml')
-    print(soup.prettify())
+    
