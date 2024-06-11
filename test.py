@@ -1,6 +1,2 @@
-from bs4 import BeautifulSoup
-import requests
+import selenium
 
-scrape_text = requests.get('https://logs.tf')
-
-    
