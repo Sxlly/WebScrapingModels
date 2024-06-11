@@ -6,6 +6,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 options = Options()
 
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
 
 
 
