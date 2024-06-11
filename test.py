@@ -18,7 +18,12 @@ allLogsNames = []
 
 for log in allLogsTable.find_elements(By.XPATH, '//tr'):
 
-    row = [item.tezt for item in log.find_elements(By.XPATH, './/td')]
+    row = [item.text for item in log.find_elements(By.XPATH, './/td')]
+    allLogsNames.append(row)
+
+for log in allLogsNames:
+    print("\n")
+    print(log)
 
 
 
