@@ -8,6 +8,8 @@ options = Options()
 
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
+driver.get("https://logs.tf")
+
 
 
 
