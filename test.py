@@ -22,9 +22,9 @@ for log in allLogsTable.find_elements(By.XPATH, '//tr'):
     allLogsNames.append(row)
 
 for log in allLogsNames:
-    print("\n")
-    print(log)
-
+    for detail in log:
+        print("\n")
+        print(detail)
 
 
 
